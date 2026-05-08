@@ -15,21 +15,21 @@
 
 # Notebook Structure
  The notebook is divided into the following sections: 
-# 1. Data Loading
+## 1. Data Loading
  Loads the UFO sightings dataset directly from the TidyTuesday GitHub repository using pandas. The dataset contains over 80,000 eyewitness reports of UFO sightings.
 
-# 2. Text Preprocessing
+## 2. Text Preprocessing
  Cleans and normalizes raw description text using nltk. Steps include lowercasing, punctuation removal, stopword filtering (with a custom domain-specific stopword list), and lemmatization via WordNetLemmatizer.
 
-# 3. Topic Modeling (LDA)
+## 3. Topic Modeling (LDA)
  Applies Latent Dirichlet Allocation (LDA) using scikit-learn to discover 8 latent topics across the corpus. A CountVectorizer document-term matrix is constructed with max_df=0.95 and min_df=10 thresholds before fitting the model.
 
-# 4. Word Network Analysis
+## 4. Word Network Analysis
  Builds a word co-occurrence graph using networkx from the top 50 most frequent lemmatized terms. Edges are weighted by co-occurrence frequency within individual reports. The resulting network is visualized with matplotlib and saved as network.png.
 
-# 5. Word Frequency Visualization
+## 5. Word Frequency Visualization
  Generates an interactive horizontal bar chart of the 15 most common words using altair, showing word frequency across the full cleaned corpus.
 
-# 6. UFO Shape Classification
- Trains a Logistic Regression classifier using a TF-IDF pipeline (CountVectorizer + TfidfTransformer) to predict the reported UFO shape from the description text. Shapes with fewer than 50 reports and ambiguous labels (unknown, other) are excluded. Model performance is evaluated with accuracy, a full classification report, and a confusion matrix heatmap (via seaborn
+## 6. UFO Shape Classification
+ Trains a Logistic Regression classifier using a TF-IDF pipeline (CountVectorizer + TfidfTransformer) to predict the reported UFO shape from the description text. Shapes with fewer than 50 reports and ambiguous labels (unknown, other) are excluded. Model performance is evaluated with accuracy, a full classification report, and a confusion matrix heatmap (via seaborn)
 
