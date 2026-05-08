@@ -7,7 +7,7 @@
 
 ## Contents 
 
-# The copendium contains the data, code, and notebook associated with the analysis. It is organized as follows:
+ The copendium contains the data, code, and notebook associated with the analysis. It is organized as follows:
 
  The copy_of_final_project_draft.ipynb file contains the complete Jupyter notebook for all analysis steps, including preprocessing, topic modeling, network analysis, and classification. 
 
