@@ -13,6 +13,16 @@
 
  The network.png file is a generated output-- a word co-occurrence network graph produced from the top 50 most frequent terms across all UFO sighting reports. 
 
+ The predictions.csv file is the predicted vs actual UFO shapes from the Logistic Regression Classifier
+
+ Classification_report.csv is the Precision, recall, and F1 scores for each UFO shape class 
+
+ lda_topics.csv is the top words for the 8 LDA topics discovered 
+
+ poster.pdf is our project poster summarizing the analysis and findings 
+
+ word_frequency_chart.png is the bar chart of the 15 most common words across all UFO reports 
+
 # Notebook Structure
  The notebook is divided into the following sections: 
 ## 1. Data Loading
